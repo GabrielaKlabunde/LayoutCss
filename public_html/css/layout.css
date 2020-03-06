@@ -1,0 +1,123 @@
+
+/* 
+    Created on : 04/03/2020, 18:49:33
+    Author     : Gabriela Klabunde
+*/
+/*o asterisco vale padronizar as propriedades... resetando o estilo dos navegadores*/
+
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One&display=swap');
+
+
+h2{
+   font-family: 'Pacifico', cursive;
+   font-size: 30px;
+   color: #000;  
+   text-align: center;
+}
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Times New Roman;
+    padding: 10px; /*É um espaçamento*/
+    background:#20B2AA;
+}
+/*Estruturas do site*/
+.header{
+    padding:30px;
+    text-align: center;
+    background-color: #AFEEEE;
+}
+
+.header h1{
+    font-size: 50px; 
+}
+
+.nav{
+    /*Desabilitanfo a rolagem do mouse(scroll)*/
+    overflow: hidden;
+    background-color: #000;    
+}
+.nav a{
+    float:left; /*joga o ultimo link pra esquerda*/
+    font-size: 19px;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding:14px 16px;
+    text-decoration: none;
+}
+
+.nav a:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+.nav .alinha-direita{
+    float:right;
+}
+
+#efect {
+color: #fff;
+font-size: 60PX;
+background: #000;
+text-shadow: #fff 2px 2px 0px, #000 4px 4px 0px;
+color: #000;
+background: #AFEEEE;
+text-align: center;
+}
+
+.leftCol{
+    float: left;
+    width: 75%;  
+}
+.fakeImg{
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+
+.card{
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.rightCol{
+    float: left;
+    width:25%;
+    background-color: #20B2AA;
+    padding-left: 20px;
+}
+/*Rodapé*/
+.footer{
+    padding:20px;
+    text-align: center;
+    background-color: #ddd;
+    margin-top: 20px;
+}
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+/*Rodando no celular....*/
+@media screen and (max-width: 800px) {
+    .leftCol, .rightCol {
+       width: 100%;
+       padding: 0px;      
+    }
+}
+@media screen and (max-width:400px) {
+    .nav a {
+        float:none;
+        width: 100%;
+    }
+}
+
+#efectRedes{
+    color: #000;
+    font-size: 20PX;
+}
